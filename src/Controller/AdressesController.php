@@ -123,16 +123,17 @@ class AdressesController extends AppController
     public function isAuthorized($user)
     {
         $action = $this->request->getParam('action');
+        $param = $this->request->getParam('pass.0');
         // Les actions 'add' et 'expeditions' sont toujours autorisés pour les utilisateur
         // authentifiés sur l'application
         if (in_array($action, ['view']) ) {
             return true;
         }else if($this->Auth->user('Status') == 1 && $this->Auth->user('email') == "admin@admin.com"
-            && in_array($action, ['add', 'expeditions', 'users','adressesDescriptions', 'files'])){
+            && in_array($action, ['add', 'expeditions', 'users','adressesDescriptions', 'files','view'])){
             return true;
-        }else if($this->Auth->user('Status') == 1 && in_array($action, ['add','expeditions'])){
+        }else if($this->Auth->user('Status') == 1 && in_array($action, ['add','expeditions','view'])){
             return true;
-        }else if($this->Auth->user('Status') == 0 && in_array($action, ['add'])){
+        }else if($this->Auth->user('Status') == 0 && in_array($action, ['add','view'])){
             return true;
         }
 

@@ -126,10 +126,10 @@ class FilesController extends AppController
         if (in_array($action, ['view'])) {
             return true;
         }else if($this->Auth->user('Status') == 1 && $this->Auth->user('email') == 'admin@admin.com'
-            && in_array($action, ['add', 'edit', 'delete'])){
+            && in_array($action, ['add', 'edit', 'delete','view'])){
             return true;
         }
-        else if($this->Auth->user('Status') == 1 && in_array($action, ['add', 'edit'])){
+        else if($this->Auth->user('Status') == 1 && in_array($action, ['add', 'edit','view'])){
             return true;
         }else if($this->Auth->user('Status') == 0 && in_array($action, ['view'])){
             return true;
