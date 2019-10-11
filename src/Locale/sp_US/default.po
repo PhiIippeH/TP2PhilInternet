@@ -1,0 +1,820 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2019-10-03 18:10+0000\n"
+"PO-Revision-Date: 2019-10-04 12:23-0400\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.2.4\n"
+"Last-Translator: \n"
+"Language: es_US\n"
+
+#: Controller/AdressesController.php:61 Controller/AdressesController.php:91
+msgid "The adress has been saved."
+msgstr "La dirección ha sido salvada."
+
+#: Controller/AdressesController.php:65 Controller/AdressesController.php:95
+msgid "The adress could not be saved. Please, try again."
+msgstr "La dirección no pudo ser salvada. Por favor, inténtelo de nuevo."
+
+#: Controller/AdressesController.php:115
+msgid "The adress has been deleted."
+msgstr "La dirección ha sido eliminada."
+
+#: Controller/AdressesController.php:117
+msgid "The adress could not be deleted. Please, try again."
+msgstr "La dirección no se pudo eliminar. Por favor, inténtelo de nuevo."
+
+#: Controller/AdressesDescriptionsController.php:57
+#: Controller/AdressesDescriptionsController.php:82
+msgid "The adresses description has been saved."
+msgstr "Se ha guardado la descripción de las direcciones."
+
+#: Controller/AdressesDescriptionsController.php:61
+#: Controller/AdressesDescriptionsController.php:86
+msgid "The adresses description could not be saved. Please, try again."
+msgstr ""
+"No se pudo guardar la descripción de las direcciones. Por favor, inténtelo "
+"de nuevo."
+
+#: Controller/AdressesDescriptionsController.php:104
+msgid "The adresses description has been deleted."
+msgstr "Se ha eliminado la descripción de las direcciones."
+
+#: Controller/AdressesDescriptionsController.php:106
+msgid "The adresses description could not be deleted. Please, try again."
+msgstr ""
+"No se ha podido eliminar la descripción de las direcciones. Por favor, "
+"inténtelo de nuevo."
+
+#: Controller/ExpeditionsController.php:54
+#: Controller/ExpeditionsController.php:79
+msgid "The expedition has been saved."
+msgstr "La expedición ha sido salvada."
+
+#: Controller/ExpeditionsController.php:58
+#: Controller/ExpeditionsController.php:83
+msgid "The expedition could not be saved. Please, try again."
+msgstr "La expedición no pudo salvarse. Por favor, inténtelo de nuevo."
+
+#: Controller/ExpeditionsController.php:101
+msgid "The expedition has been deleted."
+msgstr "La expedición ha sido eliminada."
+
+#: Controller/ExpeditionsController.php:103
+msgid "The expedition could not be deleted. Please, try again."
+msgstr "La expedición no pudo ser eliminada. Inténtalo de nuevo."
+
+#: Controller/FilesController.php:61
+msgid "File has been uploaded and inserted successfully."
+msgstr "El archivo se ha cargado e insertado correctamente."
+
+#: Controller/FilesController.php:63
+msgid "Unable to upload file, please try again."
+msgstr "No se puede cargar el archivo, intente nuevamente."
+
+#: Controller/FilesController.php:66
+msgid "Unable to save file, please try again."
+msgstr "No se puede guardar el archivo, intente nuevamente."
+
+#: Controller/FilesController.php:69
+msgid "Please choose a file to upload."
+msgstr "Por favor, elija un archivo para cargar."
+
+#: Controller/FilesController.php:91
+msgid "The file has been saved."
+msgstr "El archivo ha sido guardado."
+
+#: Controller/FilesController.php:95
+msgid "The file could not be saved. Please, try again."
+msgstr "El archivo no se pudo guardar. Inténtalo de nuevo."
+
+#: Controller/FilesController.php:113
+msgid "The file has been deleted."
+msgstr "El archivo ha sido eliminado."
+
+#: Controller/FilesController.php:115
+msgid "The file could not be deleted. Please, try again."
+msgstr "El archivo no se pudo eliminar. Inténtalo de nuevo."
+
+#: Controller/UsersController.php:68 Controller/UsersController.php:92
+msgid "The user has been saved."
+msgstr "El usuario ha sido guardado."
+
+#: Controller/UsersController.php:72 Controller/UsersController.php:96
+msgid "The user could not be saved. Please, try again."
+msgstr "El usuario no pudo ser salvado. Inténtalo de nuevo."
+
+#: Controller/UsersController.php:113
+msgid "The user has been deleted."
+msgstr "El usuario ha sido eliminado."
+
+#: Controller/UsersController.php:115
+msgid "The user could not be deleted. Please, try again."
+msgstr "El usuario no pudo ser eliminado. Inténtalo de nuevo."
+
+#: Template/Adresses/add.ctp:9 Template/Adresses/edit.ctp:9
+#: Template/Adresses/index.ctp:9 Template/Adresses/index.ctp:33
+#: Template/Adresses/view.ctp:9 Template/Adresses/view.ctp:69
+#: Template/Adresses/view.ctp:99 Template/Adresses/view.ctp:137
+#: Template/AdressesDescriptions/add.ctp:9
+#: Template/AdressesDescriptions/edit.ctp:9
+#: Template/AdressesDescriptions/index.ctp:9
+#: Template/AdressesDescriptions/index.ctp:28
+#: Template/AdressesDescriptions/view.ctp:9 Template/Expeditions/add.ctp:9
+#: Template/Expeditions/edit.ctp:9 Template/Expeditions/index.ctp:9
+#: Template/Expeditions/index.ctp:24 Template/Expeditions/view.ctp:9
+#: Template/Expeditions/view.ctp:54 Template/Files/add.ctp:9
+#: Template/Files/edit.ctp:9 Template/Files/index.ctp:9
+#: Template/Files/index.ctp:28 Template/Files/view.ctp:9
+#: Template/Files/view.ctp:62 Template/Users/add.ctp:9
+#: Template/Users/edit.ctp:9 Template/Users/index.ctp:9
+#: Template/Users/index.ctp:24 Template/Users/view.ctp:9
+#: Template/Users/view.ctp:49
+msgid "Actions"
+msgstr "Comportamiento"
+
+#: Template/Adresses/add.ctp:10 Template/Adresses/edit.ctp:16
+#: Template/Adresses/view.ctp:12 Template/AdressesDescriptions/add.ctp:11
+#: Template/AdressesDescriptions/edit.ctp:17
+#: Template/AdressesDescriptions/index.ctp:11
+#: Template/AdressesDescriptions/view.ctp:14 Template/Expeditions/add.ctp:11
+#: Template/Expeditions/edit.ctp:17 Template/Expeditions/index.ctp:11
+#: Template/Expeditions/view.ctp:14 Template/Files/add.ctp:11
+#: Template/Files/edit.ctp:17 Template/Files/index.ctp:11
+#: Template/Files/view.ctp:14 Template/Users/add.ctp:11
+#: Template/Users/edit.ctp:17 Template/Users/index.ctp:11
+#: Template/Users/view.ctp:14
+msgid "List Adresses"
+msgstr "Lista de direcciones"
+
+#: Template/Adresses/add.ctp:11 Template/Adresses/edit.ctp:17
+#: Template/Adresses/index.ctp:11 Template/Adresses/view.ctp:14
+#: Template/Users/add.ctp:10 Template/Users/edit.ctp:16
+#: Template/Users/view.ctp:12
+msgid "List Users"
+msgstr "Lista de usuarios"
+
+#: Template/Adresses/add.ctp:12 Template/Adresses/edit.ctp:18
+#: Template/Adresses/index.ctp:12 Template/Adresses/view.ctp:15
+#: Template/Users/index.ctp:10 Template/Users/view.ctp:13
+msgid "New User"
+msgstr "Nuevo Usuario"
+
+#: Template/Adresses/add.ctp:13 Template/Adresses/edit.ctp:19
+#: Template/Adresses/index.ctp:13 Template/Adresses/view.ctp:16
+#: Template/AdressesDescriptions/add.ctp:10
+#: Template/AdressesDescriptions/edit.ctp:16
+#: Template/AdressesDescriptions/view.ctp:12
+msgid "List Adresses Descriptions"
+msgstr "Lista de descripciones de direcciones"
+
+#: Template/Adresses/add.ctp:14 Template/Adresses/edit.ctp:20
+#: Template/Adresses/index.ctp:14 Template/Adresses/view.ctp:17
+#: Template/AdressesDescriptions/index.ctp:10
+#: Template/AdressesDescriptions/view.ctp:13
+msgid "New Adresses Description"
+msgstr "Descripción de nuevas direcciones"
+
+#: Template/Adresses/add.ctp:15 Template/Adresses/edit.ctp:21
+#: Template/Adresses/index.ctp:15 Template/Adresses/view.ctp:18
+#: Template/Expeditions/add.ctp:10 Template/Expeditions/edit.ctp:16
+#: Template/Expeditions/view.ctp:12
+msgid "List Expeditions"
+msgstr "Lista de expediciones"
+
+#: Template/Adresses/add.ctp:16 Template/Adresses/edit.ctp:22
+#: Template/Adresses/index.ctp:16 Template/Adresses/view.ctp:19
+#: Template/Expeditions/index.ctp:10 Template/Expeditions/view.ctp:13
+msgid "New Expedition"
+msgstr "Nueva expedición"
+
+#: Template/Adresses/add.ctp:17 Template/Adresses/edit.ctp:23
+#: Template/Adresses/index.ctp:17 Template/Adresses/view.ctp:20
+#: Template/Files/add.ctp:10 Template/Files/edit.ctp:16
+#: Template/Files/view.ctp:12
+msgid "List Files"
+msgstr "Lista de archivos"
+
+#: Template/Adresses/add.ctp:18 Template/Adresses/edit.ctp:24
+#: Template/Adresses/index.ctp:18 Template/Adresses/view.ctp:21
+#: Template/Files/index.ctp:10 Template/Files/view.ctp:13
+msgid "New File"
+msgstr "Archivo nuevo"
+
+#: Template/Adresses/add.ctp:24
+msgid "Add Adress"
+msgstr "Añadir dirección"
+
+#: Template/Adresses/add.ctp:35 Template/Adresses/edit.ctp:40
+#: Template/AdressesDescriptions/add.ctp:27
+#: Template/AdressesDescriptions/edit.ctp:33 Template/Expeditions/add.ctp:24
+#: Template/Expeditions/edit.ctp:30 Template/Files/add.ctp:26
+#: Template/Files/edit.ctp:32 Template/Users/add.ctp:24
+#: Template/Users/edit.ctp:30 View/Helper/FormHelper.php:2029
+msgid "Submit"
+msgstr "Enviar"
+
+#: Template/Adresses/edit.ctp:11 Template/Adresses/index.ctp:49
+#: Template/Adresses/view.ctp:80 Template/Adresses/view.ctp:117
+#: Template/Adresses/view.ctp:152 Template/AdressesDescriptions/edit.ctp:11
+#: Template/AdressesDescriptions/index.ctp:45 Template/Expeditions/edit.ctp:11
+#: Template/Expeditions/index.ctp:37 Template/Expeditions/view.ctp:72
+#: Template/Files/edit.ctp:11 Template/Files/index.ctp:53
+#: Template/Files/view.ctp:80 Template/Users/edit.ctp:11
+#: Template/Users/index.ctp:37 Template/Users/view.ctp:62
+msgid "Delete"
+msgstr "Eliminar"
+
+#: Template/Adresses/edit.ctp:13 Template/Adresses/index.ctp:49
+#: Template/Adresses/view.ctp:11 Template/Adresses/view.ctp:80
+#: Template/Adresses/view.ctp:117 Template/Adresses/view.ctp:152
+#: Template/AdressesDescriptions/edit.ctp:13
+#: Template/AdressesDescriptions/index.ctp:45
+#: Template/AdressesDescriptions/view.ctp:11 Template/Expeditions/edit.ctp:13
+#: Template/Expeditions/index.ctp:37 Template/Expeditions/view.ctp:11
+#: Template/Expeditions/view.ctp:72 Template/Files/edit.ctp:13
+#: Template/Files/index.ctp:53 Template/Files/view.ctp:11
+#: Template/Files/view.ctp:80 Template/Users/edit.ctp:13
+#: Template/Users/index.ctp:37 Template/Users/view.ctp:11
+#: Template/Users/view.ctp:62
+msgid "Are you sure you want to delete # {0}?"
+msgstr "¿Está seguro de que desea eliminar # {0}?"
+
+#: Template/Adresses/edit.ctp:30 Template/Adresses/view.ctp:10
+msgid "Edit Adress"
+msgstr "Editar dirección"
+
+#: Template/Adresses/index.ctp:10 Template/Adresses/view.ctp:13
+#: Template/AdressesDescriptions/add.ctp:12
+#: Template/AdressesDescriptions/edit.ctp:18
+#: Template/AdressesDescriptions/index.ctp:12
+#: Template/AdressesDescriptions/view.ctp:15 Template/Expeditions/add.ctp:12
+#: Template/Expeditions/edit.ctp:18 Template/Expeditions/index.ctp:12
+#: Template/Expeditions/view.ctp:15 Template/Files/add.ctp:12
+#: Template/Files/edit.ctp:18 Template/Files/index.ctp:12
+#: Template/Files/view.ctp:15 Template/Users/add.ctp:12
+#: Template/Users/edit.ctp:18 Template/Users/index.ctp:12
+#: Template/Users/view.ctp:15
+msgid "New Adress"
+msgstr "Nueva direccion"
+
+#: Template/Adresses/index.ctp:22
+msgid "Adresses"
+msgstr "Direcciones"
+
+#: Template/Adresses/index.ctp:47 Template/Adresses/view.ctp:78
+#: Template/Adresses/view.ctp:115 Template/Adresses/view.ctp:150
+#: Template/AdressesDescriptions/index.ctp:43 Template/Expeditions/index.ctp:35
+#: Template/Expeditions/view.ctp:70 Template/Files/index.ctp:51
+#: Template/Files/view.ctp:78 Template/Users/index.ctp:35
+#: Template/Users/view.ctp:60 View/Helper/PaginatorHelper.php:1270
+msgid "View"
+msgstr "Ver"
+
+#: Template/Adresses/index.ctp:48 Template/Adresses/view.ctp:79
+#: Template/Adresses/view.ctp:116 Template/Adresses/view.ctp:151
+#: Template/AdressesDescriptions/index.ctp:44 Template/Expeditions/index.ctp:36
+#: Template/Expeditions/view.ctp:71 Template/Files/index.ctp:52
+#: Template/Files/view.ctp:79 Template/Users/index.ctp:36
+#: Template/Users/view.ctp:61
+msgid "Edit"
+msgstr "Editar"
+
+#: Template/Adresses/index.ctp:57 Template/AdressesDescriptions/index.ctp:53
+#: Template/Expeditions/index.ctp:45 Template/Files/index.ctp:61
+#: Template/Users/index.ctp:45
+msgid "first"
+msgstr "primera"
+
+#: Template/Adresses/index.ctp:58 Template/AdressesDescriptions/index.ctp:54
+#: Template/Expeditions/index.ctp:46 Template/Files/index.ctp:62
+#: Template/Users/index.ctp:46
+msgid "previous"
+msgstr "anterior"
+
+#: Template/Adresses/index.ctp:60 Template/AdressesDescriptions/index.ctp:56
+#: Template/Expeditions/index.ctp:48 Template/Files/index.ctp:64
+#: Template/Users/index.ctp:48
+msgid "next"
+msgstr "próxima"
+
+#: Template/Adresses/index.ctp:61 Template/AdressesDescriptions/index.ctp:57
+#: Template/Expeditions/index.ctp:49 Template/Files/index.ctp:65
+#: Template/Users/index.ctp:49
+msgid "last"
+msgstr "último"
+
+#: Template/Adresses/index.ctp:63 Template/AdressesDescriptions/index.ctp:59
+#: Template/Expeditions/index.ctp:51 Template/Files/index.ctp:67
+#: Template/Users/index.ctp:51
+msgid ""
+"Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} "
+"total"
+msgstr ""
+
+#: Template/Adresses/view.ctp:11
+msgid "Delete Adress"
+msgstr "Eliminar dirección"
+
+#: Template/Adresses/view.ctp:28 Template/Users/view.ctp:22
+msgid "Email"
+msgstr "Email"
+
+#: Template/Adresses/view.ctp:32 Template/AdressesDescriptions/view.ctp:22
+#: Template/Users/view.ctp:43
+msgid "Adress"
+msgstr "Dirección"
+
+#: Template/Adresses/view.ctp:36 Template/Expeditions/view.ctp:48
+#: Template/Files/view.ctp:56 Template/Users/view.ctp:44
+msgid "Home Type"
+msgstr "Tipo Domicilio"
+
+#: Template/Adresses/view.ctp:40 Template/Expeditions/view.ctp:49
+#: Template/Files/view.ctp:57 Template/Users/view.ctp:45
+msgid "Bill"
+msgstr "Cuenta"
+
+#: Template/Adresses/view.ctp:44 Template/Adresses/view.ctp:65
+#: Template/Adresses/view.ctp:92 Template/Adresses/view.ctp:129
+#: Template/AdressesDescriptions/view.ctp:42 Template/Expeditions/view.ctp:26
+#: Template/Expeditions/view.ctp:43 Template/Files/view.ctp:30
+#: Template/Files/view.ctp:51 Template/Users/view.ctp:26
+msgid "Id"
+msgstr "Carné de identidad"
+
+#: Template/Adresses/view.ctp:48 Template/Adresses/view.ctp:67
+#: Template/Adresses/view.ctp:96 Template/Adresses/view.ctp:135
+#: Template/AdressesDescriptions/view.ctp:46 Template/Expeditions/view.ctp:30
+#: Template/Expeditions/view.ctp:52 Template/Files/view.ctp:34
+#: Template/Files/view.ctp:60 Template/Users/view.ctp:30
+#: Template/Users/view.ctp:47
+msgid "Created"
+msgstr "Creado"
+
+#: Template/Adresses/view.ctp:52 Template/Adresses/view.ctp:68
+#: Template/Adresses/view.ctp:97 Template/Adresses/view.ctp:136
+#: Template/AdressesDescriptions/view.ctp:50 Template/Expeditions/view.ctp:34
+#: Template/Expeditions/view.ctp:53 Template/Files/view.ctp:38
+#: Template/Files/view.ctp:61 Template/Users/view.ctp:34
+#: Template/Users/view.ctp:48
+msgid "Modified"
+msgstr "Modificado"
+
+#: Template/Adresses/view.ctp:56 Template/Expeditions/view.ctp:51
+#: Template/Files/view.ctp:59 Template/Users/view.ctp:46
+msgid "Published"
+msgstr "Publicado"
+
+#: Template/Adresses/view.ctp:57 Template/Files/view.ctp:43
+msgid "Yes"
+msgstr "si"
+
+#: Template/Adresses/view.ctp:57 Template/Files/view.ctp:43
+msgid "No"
+msgstr "No"
+
+#: Template/Adresses/view.ctp:61
+msgid "Related Expeditions"
+msgstr "Expediciones relacionadas"
+
+#: Template/Adresses/view.ctp:66 Template/Expeditions/view.ctp:22
+#: Template/Expeditions/view.ctp:45 Template/Files/view.ctp:53
+msgid "Title"
+msgstr "Título"
+
+#: Template/Adresses/view.ctp:88
+msgid "Related Files"
+msgstr "Archivos relacionados"
+
+#: Template/Adresses/view.ctp:94
+msgid "Picture"
+msgstr "Imagen"
+
+#: Template/Adresses/view.ctp:98 Template/Files/view.ctp:42
+msgid "Status"
+msgstr "Estado"
+
+#: Template/Adresses/view.ctp:125
+msgid "Related Adresses Descriptions"
+msgstr "Descripciones de direcciones relacionadas"
+
+#: Template/Adresses/view.ctp:130
+msgid "Adress Id"
+msgstr "ID de dirección"
+
+#: Template/Adresses/view.ctp:131 Template/AdressesDescriptions/view.ctp:26
+msgid "City"
+msgstr "Ciudad"
+
+#: Template/Adresses/view.ctp:132 Template/AdressesDescriptions/view.ctp:30
+msgid "Province"
+msgstr "Provincia"
+
+#: Template/Adresses/view.ctp:133 Template/AdressesDescriptions/view.ctp:34
+msgid "Country"
+msgstr "País"
+
+#: Template/Adresses/view.ctp:134 Template/AdressesDescriptions/view.ctp:38
+msgid "Zip Code"
+msgstr "Código postal"
+
+#: Template/AdressesDescriptions/add.ctp:18
+msgid "Add Adresses Description"
+msgstr "Agregar direcciones Descripción"
+
+#: Template/AdressesDescriptions/edit.ctp:24
+#: Template/AdressesDescriptions/view.ctp:10
+msgid "Edit Adresses Description"
+msgstr "Editar direcciones Descripción"
+
+#: Template/AdressesDescriptions/index.ctp:16
+msgid "Adresses Descriptions"
+msgstr "Descripciones de direcciones"
+
+#: Template/AdressesDescriptions/view.ctp:11
+msgid "Delete Adresses Description"
+msgstr "Eliminar direcciones Descripción"
+
+#: Template/Expeditions/add.ctp:18
+msgid "Add Expedition"
+msgstr "Añadir expedición"
+
+#: Template/Expeditions/edit.ctp:24 Template/Expeditions/view.ctp:10
+msgid "Edit Expedition"
+msgstr "Editar expedición"
+
+#: Template/Expeditions/index.ctp:16
+msgid "Expeditions"
+msgstr "Expediciones"
+
+#: Template/Expeditions/view.ctp:11
+msgid "Delete Expedition"
+msgstr "Eliminar expedición"
+
+#: Template/Expeditions/view.ctp:39 Template/Files/view.ctp:47
+#: Template/Users/view.ctp:39
+msgid "Related Adresses"
+msgstr "Direcciones relacionadas"
+
+#: Template/Expeditions/view.ctp:44 Template/Files/view.ctp:52
+msgid "User Id"
+msgstr "ID de usuario"
+
+#: Template/Expeditions/view.ctp:46 Template/Files/view.ctp:54
+msgid "Date Adresse Envoi"
+msgstr ""
+
+#: Template/Expeditions/view.ctp:47 Template/Files/view.ctp:55
+msgid "Date Adresse Reception"
+msgstr ""
+
+#: Template/Expeditions/view.ctp:50 Template/Files/view.ctp:58
+msgid "Slug"
+msgstr ""
+
+#: Template/Files/add.ctp:18
+msgid "Add File"
+msgstr "Agregar archivo"
+
+#: Template/Files/edit.ctp:24 Template/Files/view.ctp:10
+msgid "Edit File"
+msgstr "Editar archivo"
+
+#: Template/Files/index.ctp:16
+msgid "Files"
+msgstr "Archivos"
+
+#: Template/Files/index.ctp:22
+msgid "Preview"
+msgstr "Avance"
+
+#: Template/Files/view.ctp:11
+msgid "Delete File"
+msgstr "Borrar archivo"
+
+#: Template/Files/view.ctp:22
+msgid "Name"
+msgstr "Nombre"
+
+#: Template/Files/view.ctp:26
+msgid "Path"
+msgstr "Camino"
+
+#: Template/Layout/error.ctp:35 Template/Error/error400.ctp:36
+#: Template/Error/error500.ctp:41
+msgid "Error"
+msgstr "Error"
+
+#: Template/Layout/error.ctp:43
+msgid "Back"
+msgstr "atrás"
+
+#: Template/Users/add.ctp:18
+msgid "Add User"
+msgstr "Agregar usuario"
+
+#: Template/Users/edit.ctp:24 Template/Users/view.ctp:10
+msgid "Edit User"
+msgstr "editar usuario"
+
+#: Template/Users/index.ctp:16
+msgid "Users"
+msgstr "Los usuarios"
+
+#: Template/Users/view.ctp:11
+msgid "Delete User"
+msgstr "Borrar usuario"
+
+#: Template/Error/error400.ctp:37
+msgid "The requested address {0} was not found on this server."
+msgstr "La dirección solicitada {0} no se encontró en este servidor."
+
+#: Template/Error/error500.ctp:39
+msgid "An Internal Error Has Occurred"
+msgstr ""
+
+#: Controller/Component/AuthComponent.php:500
+msgid "You are not authorized to access that location."
+msgstr "No tiene autorización para acceder a esa ubicación."
+
+#: Controller/Component/CsrfComponent.php:182
+#: Http/Middleware/CsrfProtectionMiddleware.php:227
+msgid "Missing CSRF token cookie"
+msgstr ""
+
+#: Controller/Component/CsrfComponent.php:186
+#: Http/Middleware/CsrfProtectionMiddleware.php:231
+msgid "CSRF token mismatch."
+msgstr ""
+
+#: Error/ExceptionRenderer.php:301
+msgid "Not Found"
+msgstr ""
+
+#: Error/ExceptionRenderer.php:303
+msgid "An Internal Error Has Occurred."
+msgstr ""
+
+#: Http/Response.php:2653
+msgid "The requested file contains `..` and will not be read."
+msgstr ""
+
+#: Http/Response.php:2674
+msgid "The requested file was not found"
+msgstr ""
+
+#: I18n/Number.php:90
+msgid "{0,number,#,###.##} KB"
+msgstr ""
+
+#: I18n/Number.php:92
+msgid "{0,number,#,###.##} MB"
+msgstr ""
+
+#: I18n/Number.php:94
+msgid "{0,number,#,###.##} GB"
+msgstr ""
+
+#: I18n/Number.php:96
+msgid "{0,number,#,###.##} TB"
+msgstr ""
+
+#: I18n/Number.php:88
+msgid "{0,number,integer} Byte"
+msgid_plural "{0,number,integer} Bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:80
+msgid "{0} from now"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:80
+msgid "{0} ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:83
+msgid "{0} after"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:83
+msgid "{0} before"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:114
+msgid "just now"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:151
+msgid "about a second ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:152
+msgid "about a minute ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:153
+msgid "about an hour ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:154 I18n/RelativeTimeFormatter.php:332
+msgid "about a day ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:155 I18n/RelativeTimeFormatter.php:333
+msgid "about a week ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:156 I18n/RelativeTimeFormatter.php:334
+msgid "about a month ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:157 I18n/RelativeTimeFormatter.php:335
+msgid "about a year ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:168
+msgid "in about a second"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:169
+msgid "in about a minute"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:170
+msgid "in about an hour"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:171 I18n/RelativeTimeFormatter.php:346
+msgid "in about a day"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:172 I18n/RelativeTimeFormatter.php:347
+msgid "in about a week"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:173 I18n/RelativeTimeFormatter.php:348
+msgid "in about a month"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:174 I18n/RelativeTimeFormatter.php:349
+msgid "in about a year"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:304
+msgid "today"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:370
+msgid "%s ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:371
+msgid "on %s"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:47 I18n/RelativeTimeFormatter.php:126
+#: I18n/RelativeTimeFormatter.php:316
+msgid "{0} year"
+msgid_plural "{0} years"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:51 I18n/RelativeTimeFormatter.php:129
+#: I18n/RelativeTimeFormatter.php:319
+msgid "{0} month"
+msgid_plural "{0} months"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:57 I18n/RelativeTimeFormatter.php:132
+#: I18n/RelativeTimeFormatter.php:322
+msgid "{0} week"
+msgid_plural "{0} weeks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:59 I18n/RelativeTimeFormatter.php:135
+#: I18n/RelativeTimeFormatter.php:325
+msgid "{0} day"
+msgid_plural "{0} days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:64 I18n/RelativeTimeFormatter.php:138
+msgid "{0} hour"
+msgid_plural "{0} hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:68 I18n/RelativeTimeFormatter.php:141
+msgid "{0} minute"
+msgid_plural "{0} minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:72 I18n/RelativeTimeFormatter.php:144
+msgid "{0} second"
+msgid_plural "{0} seconds"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ORM/RulesChecker.php:57
+msgid "This value is already in use"
+msgstr "Este valor ya está en uso"
+
+#: ORM/RulesChecker.php:104
+msgid "This value does not exist"
+msgstr "Este valor no existe"
+
+#: ORM/RulesChecker.php:128
+msgid "The count does not match {0}{1}"
+msgstr ""
+
+#: Utility/Text.php:934
+msgid "and"
+msgstr ""
+
+#: Validation/Validator.php:2436 View/Form/ArrayContext.php:226
+msgid "This field is required"
+msgstr "este campo es requerido"
+
+#: Validation/Validator.php:2458
+msgid "This field cannot be left empty"
+msgstr "Este campo no puede dejarse vacío"
+
+#: Validation/Validator.php:2608
+msgid "The provided value is invalid"
+msgstr "El valor proporcionado no es válido."
+
+#: View/Helper/FormHelper.php:1108
+msgid "Edit {0}"
+msgstr "Editar {0}"
+
+#: View/Helper/FormHelper.php:1110
+msgid "New {0}"
+msgstr "Nuevo {0}"
+
+#: View/Helper/HtmlHelper.php:819
+msgid "Home"
+msgstr "Casa"
+
+#: View/Widget/DateTimeWidget.php:540
+msgid "January"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:541
+msgid "February"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:542
+msgid "March"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:543
+msgid "April"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:544
+msgid "May"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:545
+msgid "June"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:546
+msgid "July"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:547
+msgid "August"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:548
+msgid "September"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:549
+msgid "October"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:550
+msgid "November"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:551
+msgid "December"
+msgstr ""
+
+#: src/Users/view.ctp:26
+msgid "Status (Email)"
+msgstr "Estatus (e-mail)"
