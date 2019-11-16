@@ -12,6 +12,36 @@ use App\Controller\AppController;
  */
 class AdressesDescriptionsController extends AppController
 {
+    public function initialize() {
+        parent::initialize();
+        $this->Auth->allow(['autocomplete', 'findDescriptions', 'add', 'edit', 'delete']);
+    }
+
+    public function findDescriptions() {
+
+        if ($this->request->is('ajax')) {
+
+            $this->autoRender = false;
+            $name = $this->request->query['term'];
+            $results = $this->Countries->find('all', array(
+                'conditions' => array('AdressesDescriptions.country_id LIKE ' => '%' . $name . '%')
+            ));
+
+            $resultArr = array();
+            foreach ($results as $result) {
+                $resultArr[] = array('label' => $result['country'], 'value' => $result['country']);
+            }
+            echo json_encode($resultArr);
+        }
+    }
+
+
+    public function autocomplete(){
+
+    }
+
+
+
     /**
      * Index method
      *
@@ -37,7 +67,7 @@ class AdressesDescriptionsController extends AppController
     public function view($id = null)
     {
         $adressesDescription = $this->AdressesDescriptions->get($id, [
-            'contain' => ['Adresses']
+            'contain' => ['Adresses','Countries']
         ]);
 
         $this->set('adressesDescription', $adressesDescription);

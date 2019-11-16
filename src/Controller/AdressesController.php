@@ -64,10 +64,25 @@ class AdressesController extends AppController
             }
             $this->Flash->error(__('The adress could not be saved. Please, try again.'));
         }
+
+        $this->loadModel('Categories');
+        $categories = $this->Categories->find('list', ['limit' => 200]);
+
+        // Extraire le id de la première catégorie
+        $categories = $categories->toArray();
+        reset($categories);
+        $category_id = key($categories);
+
+        // Bâtir la liste des sous-catégories reliées à cette catégorie
+        $subcategories = $this->Adresses->Subcategories->find('list', [
+            'conditions' => ['Subcategories.category_id' => $category_id],
+        ]);
+
+
         $users = $this->Adresses->Users->find('list', ['limit' => 200]);
         $expeditions = $this->Adresses->Expeditions->find('list', ['limit' => 200]);
         $files = $this->Adresses->Files->find('list', ['limit' => 200]);
-        $this->set(compact('adress', 'users', 'expeditions', 'files'));
+        $this->set(compact('adress', 'users', 'expeditions', 'files', 'subcategories', 'categories'));
     }
 
     /**
@@ -109,6 +124,7 @@ class AdressesController extends AppController
      */
     public function delete($slug = null)
     {
+
         $this->request->allowMethod(['post', 'delete']);
         $adress = $this->Adresses->findBySlug($slug)->first();
         if ($this->Adresses->delete($adress)) {

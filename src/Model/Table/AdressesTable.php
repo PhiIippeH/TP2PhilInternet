@@ -53,6 +53,10 @@ class AdressesTable extends Table
             'foreignKey' => 'user_id',
             'joinType' => 'INNER'
         ]);
+        $this->belongsTo('Subcategories', [
+            'foreignKey' => 'subcategory_id'
+        ]);
+
         $this->hasMany('AdressesDescriptions', [
             'foreignKey' => 'adress_id'
         ]);

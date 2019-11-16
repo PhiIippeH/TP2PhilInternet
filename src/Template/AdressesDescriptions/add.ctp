@@ -1,7 +1,18 @@
 <?php
+$urlToCarsAutocompleteJson = $this->Url->build([
+    "controller" => "Countries",
+    "action" => "findDescriptions",
+    "_ext" => "json"
+]);
+echo $this->Html->scriptBlock('var urlToAutocompleteAction = "' . $urlToCarsAutocompleteJson . '";', ['block' => true]);
+echo $this->Html->script('countries/autocomplete', ['block' => 'scriptBottom']);
+?>
+
+<?php
 /**
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\AdressesDescription $adressesDescription
+ *
  */
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
@@ -20,7 +31,7 @@
             echo $this->Form->control('adress_id', ['options' => $adresses]);
             echo $this->Form->control('ville');
             echo $this->Form->control('province');
-            echo $this->Form->control('pays');
+            echo $this->Form->control('pays',['country_id' => 'autocomplete']);
             echo $this->Form->control('zip_code');
         ?>
     </fieldset>

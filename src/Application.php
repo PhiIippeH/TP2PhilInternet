@@ -34,6 +34,12 @@ class Application extends BaseApplication
      */
     public function bootstrap()
     {
+        $this->addPlugin('BootstrapUI');
+
+        $this->addPlugin('CakePdf', ['bootstrap' => true]);
+
+        $this->addPlugin('Crud');
+
         // Call parent to load bootstrap from files.
         parent::bootstrap();
 

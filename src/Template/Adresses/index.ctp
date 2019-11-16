@@ -9,13 +9,10 @@
         <li class="heading"><?= __('Actions') ?></li>
         <li><?= $this->Html->link(__('New Adress'), ['action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New User'), ['controller' => 'Users', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Adresses Descriptions'), ['controller' => 'AdressesDescriptions', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Adresses Description'), ['controller' => 'AdressesDescriptions', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Expeditions'), ['controller' => 'Expeditions', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Expedition'), ['controller' => 'Expeditions', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Files'), ['controller' => 'Files', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New File'), ['controller' => 'Files', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List of Shippers'), ['controller' => 'Shippers', 'action' => 'index']) ?></li>
     </ul>
 </nav>
 <div class="adresses index large-9 medium-8 columns content">
@@ -45,6 +42,7 @@
                 <td><--?= h($adress->modified) ?></td-->
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $adress->id]) ?>
+                    <?= $this->Html->link('(pdf)', ['action' => 'view', $adress->id . '.pdf']) ?>
                     <?= $this->Html->link(__('Edit'), ['action' => 'edit', $adress->slug]) ?>
                     <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $adress->slug], ['confirm' => __('Are you sure you want to delete # {0}?', $adress->id)]) ?>
                 </td>

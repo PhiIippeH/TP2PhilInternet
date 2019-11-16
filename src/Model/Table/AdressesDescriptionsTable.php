@@ -44,6 +44,13 @@ class AdressesDescriptionsTable extends Table
             'foreignKey' => 'adress_id',
             'joinType' => 'INNER'
         ]);
+
+        $this->belongsTo('countries', [
+            'foreignKey' => 'country_id',
+            'joinType' => 'INNER'
+        ]);
+
+
     }
 
     /**
@@ -91,6 +98,7 @@ class AdressesDescriptionsTable extends Table
     public function buildRules(RulesChecker $rules)
     {
         $rules->add($rules->existsIn(['adress_id'], 'Adresses'));
+        $rules->add($rules->existsIn(['country_id'], 'countries'));
 
         return $rules;
     }

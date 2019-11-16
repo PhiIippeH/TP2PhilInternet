@@ -32,6 +32,8 @@
             echo $this->Form->control('title');
             echo $this->Form->control('type_domicile');
             echo $this->Form->control('facture');
+            echo $this->Form->control('Category_id', ['options' => $categories]);
+            echo $this->Form->control('subcategory', ['options' => $subcategories]);
             echo $this->Form->control('published');
             echo $this->Form->control('expeditions._ids', ['options' => $expeditions]);
             echo $this->Form->control('files._ids', ['options' => $files]);
