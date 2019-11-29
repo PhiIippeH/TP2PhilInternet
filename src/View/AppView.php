@@ -36,6 +36,6 @@ class AppView extends UIView
      */
     public function initialize()
     {
-
+        
     }
 }

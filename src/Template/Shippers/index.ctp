@@ -1,75 +1,61 @@
 <?php
-$urlToRestApi = $this->Url->build('/api/shippers', true);
+$urlToRestApi = $this->Url->build([
+    'prefix' => 'api',
+    'controller' => 'Shippers'], true);
 echo $this->Html->scriptBlock('var urlToRestApi = "' . $urlToRestApi . '";', ['block' => true]);
 echo $this->Html->script('Shippers/index', ['block' => 'scriptBottom']);
+
 ?>
 
-<div class="container">
-    <div class="row">
-        <div class="panel panel-default cocktails-content">
-            <div class="panel-heading">Shippers <a href="javascript:void(0);" class="glyphicon glyphicon-plus" id="addLink" onclick="javascript:$('#addForm').slideToggle();">Add</a></div>
-            <div class="panel-body none formData" id="addForm">
-                <h2 id="actionLabel">Add Shipper</h2>
-                <form class="form" id="shipperAddForm" enctype='application/json'>
-                    <div class="form-group">
-                        <label>Company_Name</label>
-                        <input type="text" class="form-control" name="company_name" id="company_name"/>
-                    </div>
-                    <div class="form-group">
-                        <label>Phone</label>
-                        <input type="text" class="form-control" name="phone" id="phone"/>
-                    </div>
-                    <a href="javascript:void(0);" class="btn btn-warning" onclick="$('#addForm').slideUp();">Cancel</a>
-                    <a href="javascript:void(0);" class="btn btn-success" onclick="shipperAction('add')">Add Shipper</a>
-                    <!-- input type="submit" class="btn btn-success" id="addButton" value="Add Cocktail" -->
-                </form>
-            </div>
-            <div class="panel-body none formData" id="editForm">
-                <h2 id="actionLabel">Edit Shipper</h2>
-                <form class="form" id="shipperEditForm" enctype='application/json'>
-                    <div class="form-group">
-                        <label>Company_Name</label>
-                        <input type="text" class="form-control" name="company_name" id="company_nameEdit"/>
-                    </div>
-                    <div class="form-group">
-                        <label>Phone</label>
-                        <input type="text" class="form-control" name="phone" id="phoneEdit"/>
-                    </div>
-                    <input type="hidden" class="form-control" name="shipper_id" id="shipper_idEdit"/>
-                    <a href="javascript:void(0);" class="btn btn-warning" onclick="$('#editForm').slideUp();">Cancel</a>
-                    <a href="javascript:void(0);" class="btn btn-success" onclick="shipperAction('edit')">Update Shipper</a>
-                    <!-- input type="submit" class="btn btn-success" id="editButton" value="Update Cocktail" -->
-                </form>
-            </div>
-            <table class="table table-striped">
-                <thead>
-                <tr>
-                    <th></th>
-                    <th>Company_Name</th>
-                    <th>Phone</th>
-                    <th>Action</th>
-                </tr>
-                </thead>
-                <tbody id="shipperData">
-                <?php
-                $count = 0;
-                foreach ($shippers as $shipper): $count++;
-                    ?>
-                    <tr>
-                        <td><?php echo '#' . $count; ?></td>
-                        <td><?php echo $shipper['company_name']; ?></td>
-                        <td><?php echo $shipper['phone']; ?></td>
-                        <td>
-                            <a href="javascript:void(0);" class="glyphicon glyphicon-edit" onclick="editShipper('<?php echo $shipper['shipper_id']; ?>')"></a>
-                            <a href="javascript:void(0);" class="glyphicon glyphicon-trash" onclick="return confirm('Are you sure to delete data?') ? shipperAction('delete', '<?php echo $shipper['shipper_id']; ?>') : false;"></a>
-                        </td>
-                    </tr>
-                <?php
-                endforeach;
-                ?>
-                <tr><td colspan="5">No Shipper(s) found......</td></tr>
-                </tbody>
-            </table>
-        </div>
+<div  ng-app="app"  ng-controller="ShipperCRUDCtrl">
+
+    <table>
+        <tr>
+            <td width="100">ID:</td>
+            <td><input type="text" id="shipper_id" ng-model="shipper.shipper_id" /></td>
+        </tr>
+        <tr>
+            <td width="100">Company Name:</td>
+            <td><input type="text" id="company_name" ng-model="shipper.company_name" /></td>
+        </tr>
+        <tr>
+            <td width="100">Phone:</td>
+            <td><input type="text" id="phone" ng-model="shipper.phone" /></td>
+        </tr>
+    </table>
+    <br /> <br />
+    <a ng-click="getShipper(shipper.shipper_id)">Get Shipper</a>
+    <a ng-click="updateShipper(shipper.shipper_id, shipper.company_name, shipper.phone)">Update Shipper</a>
+    <a ng-click="addShipper(shipper.company_name, shipper.phone)">Add Shipper</a>
+    <a ng-click="deleteShipper(shipper.shipper_id)">Delete Shipper</a>
+
+    <br /> <br />
+    <p style="color: green">{{message}}</p>
+    <p style="color: red">{{errorMessage}}</p>
+
+    <br />
+    <br />
+    <a ng-click="getAllShippers()">Get all Shippers</a><br />
+    <br /> <br />
+    <table>
+
+    <tr>
+        <th>Shipper_id</th>
+        <th>Company_Name</th>
+        <th>Phone</th>
+    </tr>
+
+    </table>
+    <div ng-repeat="shipper in shippers">
+        <table>
+        <tr>
+            <td>{{shipper.shipper_id}} </td>
+            <td>{{shipper.company_name}} </td>
+            <td>{{shipper.phone}} </td>
+        </tr>
+        </table>
     </div>
+
+    <!-- pre ng-show='shippers'>{{shippers | json }}</pre-->
+
 </div>

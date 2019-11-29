@@ -1,7 +1,7 @@
 <?php
 $urlToLinkedListFilter = $this->Url->build([
-    "controller" => "Subcategories",
-    "action" => "getByCategory",
+    "controller" => "Categories",
+    "action" => "getCategories",
     "_ext" => "json"
 ]);
 echo $this->Html->scriptBlock('var urlToLinkedListFilter = "' . $urlToLinkedListFilter . '";', ['block' => true]);
@@ -25,7 +25,7 @@ echo $this->Html->script('Adresses/add', ['block' => 'scriptBottom']);
         <li><?= $this->Html->link(__('List Files'), ['controller' => 'Files', 'action' => 'index']) ?></li>
     </ul>
 </nav>
-<div class="adresses form large-9 medium-8 columns content">
+<div class="adresses form large-9 medium-8 columns content" ng-app="linkedlists" ng-controller="categoriesController">
     <?= $this->Form->create($adress) ?>
     <fieldset>
         <legend><?= __('Add Adress') ?></legend>
@@ -33,10 +33,29 @@ echo $this->Html->script('Adresses/add', ['block' => 'scriptBottom']);
             //echo $this->Form->control('Adress');
             echo $this->Form->control('title');
             echo $this->Form->control('type_domicile');
-            echo $this->Form->control('facture');
-            echo $this->Form->control('Category_id', ['options' => $categories]);
-            echo $this->Form->control('subcategory', ['options' => $subcategories]);
-            echo $this->Form->control('published');
+            echo $this->Form->control('facture');?>
+        <div>
+            Categories:
+            <select name="Category_id"
+                    id="category-id"
+                    ng-model="category"
+                    ng-options="category.name for category in categories track by category.id"
+            >
+                <option value=''>Select</option>
+            </select>
+        </div>
+        <div>
+            Subcategories:
+            <select name="subcategory_id"
+                    id="subcategory-id"
+                    ng-disabled="!category"
+                    ng-model="subcategory"
+                    ng-options="subcategory.name for subcategory in category.subcategories track by subcategory.id"
+            >
+                <option value=''>Select</option>
+            </select>
+        </div>
+          <?php  echo $this->Form->control('published');
             echo $this->Form->control('expeditions._ids', ['options' => $expeditions]);
             echo $this->Form->control('files._ids', ['options' => $files]);
         ?>

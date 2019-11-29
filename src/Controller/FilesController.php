@@ -12,6 +12,9 @@ use App\Controller\AppController;
  */
 class FilesController extends AppController
 {
+
+
+
     /**
      * Index method
      *
@@ -22,6 +25,7 @@ class FilesController extends AppController
         $files = $this->paginate($this->Files);
 
         $this->set(compact('files'));
+        $this->set('_serialize', ['file']);
     }
 
     /**
@@ -38,6 +42,7 @@ class FilesController extends AppController
         ]);
 
         $this->set('file', $file);
+        $this->set('_serialize', ['file']);
     }
 
     /**
@@ -48,9 +53,13 @@ class FilesController extends AppController
     public function add()
     {
         $file = $this->Files->newEntity();
-        if ($this->request->is('post')) {
+        if ($this->request->is('post' or $this->request->is('ajax'))) {
+
             if (!empty($this->request->data['name']['name'])) {
+                debug($this->request->data());
+                die();
                 $fileName = $this->request->data['name']['name'];
+
                 $uploadPath = 'Files/';
                 $uploadFile = $uploadPath . $fileName;
                 if (move_uploaded_file($this->request->data['name']['tmp_name'], 'img/' . $uploadFile)) {

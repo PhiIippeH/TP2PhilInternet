@@ -87,7 +87,7 @@ class AppController extends Controller
         // Permet à l'action "display" de notre PagesController de continuer
         // à fonctionner. Autorise également les actions "read-only".
 
-        $this->Auth->allow(['display', 'view', 'index','changeLang']);
+        $this->Auth->allow(['display', 'view', 'index','changeLang','add']);
 
         /*
          * Enable the following component for recommended CakePHP security settings.
@@ -97,8 +97,9 @@ class AppController extends Controller
 
     }
 
-
-
+    public function beforeFilter(Event $event) {
+        $this->Auth->allow(['index', 'view', 'display', 'getByCategory', 'getSubcategoriesSortedByCategories', 'getCategories']);
+    }
 
     public function isAuthorized($user)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controller\Api;
+namespace App\Controller\api;
 
 use Cake\Controller\Controller;
 use Cake\Event\Event;

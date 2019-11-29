@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Controller\Api;
+namespace App\Controller\api;
 
-use App\Controller\Api\AppController;
+use App\Controller\api\AppController;
 
 class ShippersController extends AppController {
 

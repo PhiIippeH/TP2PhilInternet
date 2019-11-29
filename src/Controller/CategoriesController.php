@@ -12,6 +12,19 @@ use App\Controller\AppController;
  */
 class CategoriesController extends AppController
 {
+
+    public function getCategories() {
+        $this->autoRender = false; // avoid to render view
+
+        $categories = $this->Categories->find('all', [
+            'contain' => ['Subcategories'],
+        ]);
+
+        $categoriesJ = json_encode($categories);
+        $this->response->type('json');
+        $this->response->body($categoriesJ);
+
+    }
     /**
      * Index method
      *
@@ -22,6 +35,7 @@ class CategoriesController extends AppController
         $categories = $this->paginate($this->Categories);
 
         $this->set(compact('categories'));
+        $this->set('_serialize', ['categories']);
     }
 
     /**
@@ -38,6 +52,7 @@ class CategoriesController extends AppController
         ]);
 
         $this->set('category', $category);
+        $this->set('_serialize', ['category']);
     }
 
     /**
@@ -58,6 +73,7 @@ class CategoriesController extends AppController
             $this->Flash->error(__('The category could not be saved. Please, try again.'));
         }
         $this->set(compact('category'));
+        $this->set('_serialize', ['category']);
     }
 
     /**
@@ -82,6 +98,7 @@ class CategoriesController extends AppController
             $this->Flash->error(__('The category could not be saved. Please, try again.'));
         }
         $this->set(compact('category'));
+        $this->set('_serialize', ['category']);
     }
 
     /**
