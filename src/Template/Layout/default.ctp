@@ -88,7 +88,10 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                     <?= $this->Html->link('Autocomplete', ['controller' => 'adressesDescriptions', 'action' => 'add']) ?>
                 </li>
                 <li>
-                    <?= $this->Html->link('Interface Ajax', ['controller' => 'shippers', 'action' => 'index']) ?>
+                    <?= $this->Html->link('Interface CRUD', ['controller' => 'shippers', 'action' => 'index']) ?>
+                </li>
+                <li>
+                    <?= $this->Html->link('Image Cliquer-Glisser', ['controller' => 'files', 'action' => 'index']) ?>
                 </li>
                 <!--li><a target="_blank" href="https://book.cakephp.org/3.0/">Documentation</a></li>
                 <li><a target="_blank" href="https://api.cakephp.org/3.0/">API</a></li-->

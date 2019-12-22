@@ -30,7 +30,6 @@
     <p>Le visiteur peut juste voir</p>
     <hr>
     <h1>TP2 Fonctionnalité</h1>
-    <h4>Lien github: https://github.com/Rookyleek/TP2PhilInternet</h4>
     <p>Un onglet liste liées devrait être en haut à droite, cela redirige vers le add de l'adresse ou se trouve
     les listes liées fonctionnelles.
     </p>
@@ -43,10 +42,30 @@
     </p>
     <p>
         Un onglet Interface Ajax avec routage admin devrait être en haut à droite, cela redirige vers l'index non admin
-        de Shippers list(Seul la fonctionnalité edit ne fonctionne pas)</p><p> Le routage admin ce trouve en haut à droite
+        de Shippers list(Seul la fonctionnalité edit ne fonctionne pas)</p><p> Le routage admin se trouve en haut à droite
         et fonctionne. Le bootstrap ma causé des problèmes dans mes autres interfaces j'ai donc décidé de ne pas l'activer.
-</p>
+    </p>
     <hr>
+    <h2>TP3 Fonctionnalité</h2>
+    <p>
+        Un onglet Interface CRUD est en haut à droite, cela redirige vers l'interface CRUD AngularJS avec le login/logout
+        fonctionnel à moitié. Les actions CRUD sont fonctionnels avec la base de donnée.
+    </p>
+    <p>
+        Un onglet Cliquer-glisser des images est en haut à droite, cela redirige vers l'action index du controller files.
+        Le cliquer-glisser est fonctionnel.
+    </p>
+    <p>
+        En haut à droite, il y a un onglet qui permet d'aller directement vers les listes liées d'AngularJS fonctionnel
+        dans l'action add du adresses controller.
+    </p>
+    <p>
+        Le jetonJWT est implémenté mais n'est pas réellement utilisé dans l'application, mais avec RESTED, on peut voir
+        que le jetonJWT est bel et bien présent.
+    </p>
+    <p>
+        Captcha non existant.
+    </p>
 
 <p>Image de la vrai base de donnée PHP.</p>
     <body>

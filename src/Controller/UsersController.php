@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\Event\Event;
 use Cake\Mailer\Email;
 use Cake\Utility\Text;
 
@@ -18,6 +19,23 @@ class UsersController extends AppController
     /**
      * @var int
      */
+
+    public $paginate = [
+        'page' => 1,
+        'limit' => 10,
+        'maxLimit' => 100,
+        'fields' => [
+            'id', 'email'
+        ],
+        'sortWhitelist' => [
+            'id', 'email'
+        ]
+    ];
+
+    public function beforeFilter(Event $event) {
+        parent::beforeFilter($event);
+        $this->Auth->allow(['add', 'logout']);
+    }
 
 
     public function initialize()

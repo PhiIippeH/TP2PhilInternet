@@ -6,6 +6,12 @@ use App\Controller\api\AppController;
 
 class ShippersController extends AppController {
 
+    public function initialize() {
+        parent::initialize();
+        $this->Auth->allow(['add', 'index','view','edit']);
+    }
+
+
     public $paginate = [
         'page' => 1,
         'limit' => 100,

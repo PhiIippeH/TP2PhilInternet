@@ -4,7 +4,7 @@ $(function() {
     var myDropzone = new Dropzone(".dropzone");
     myDropzone.on("queuecomplete", function() {
         //Redirect URL
-       // window.location.href = urlRedirectToIndex;
+        window.location.href = urlRedirectToIndex;
     });
 });
 

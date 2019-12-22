@@ -9,7 +9,7 @@ $urlRedirectToIndex = $this->Url->build([
     "action" => "index"
 ]);
 echo $this->Html->scriptBlock('var urlRedirectToIndex = "' . $urlRedirectToIndex . '";', ['block' => true]);
-echo $this->Html->css('dropzone/dropzone.min');
+//echo $this->Html->css('dropzone/dropzone.min');
 echo $this->Html->script('dropzone/dropzone', ['block' => 'scriptLibraries']);
 echo $this->Html->script('dropzone/RedirectToIndex', ['block' => 'scriptBottom']);
 ?>

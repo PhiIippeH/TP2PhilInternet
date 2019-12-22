@@ -42,6 +42,12 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
             'https://code.jquery.com/jquery-1.12.4.js',
             'https://code.jquery.com/ui/1.12.1/jquery-ui.js',
             'https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.js',
+            'https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js',
+            'http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js',
+            'http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js',
+            'http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js',
+            'http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js',
+            'materialize.min.js',
             'http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'
                 ], ['block' => 'scriptLibraries']
         );
@@ -57,6 +63,19 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         </ul>
         <div class="top-bar-section">
             <ul class="right">
+                <li>
+
+                    <?php
+                    $loguser = $this->request->session()->read('Auth.User');
+                    if ($loguser) {
+                        $user = $loguser['email'];
+                        echo $this->Html->link($user . ' logout', ['controller' => 'Users', 'action' => 'logout']);
+                    } else {
+                        echo $this->Html->link('Login', ['controller' => 'Users', 'action' => 'login']);
+                    }
+
+                    ?>
+                </li>
                 <li><?=
                     $this->Html->link('Section admin en PHP', [
                         'prefix' => 'admin',

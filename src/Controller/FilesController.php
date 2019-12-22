@@ -13,7 +13,11 @@ use App\Controller\AppController;
 class FilesController extends AppController
 {
 
+    public function initialize() {
+        parent::initialize();
 
+        $this->Auth->allow(['add','edit','index','view']);
+    }
 
     /**
      * Index method
@@ -53,16 +57,15 @@ class FilesController extends AppController
     public function add()
     {
         $file = $this->Files->newEntity();
-        if ($this->request->is('post' or $this->request->is('ajax'))) {
+        if ($this->request->is('post') or $this->request->is('ajax')) {
 
-            if (!empty($this->request->data['name']['name'])) {
-                debug($this->request->data());
-                die();
-                $fileName = $this->request->data['name']['name'];
+            if (!empty($this->request->data['file']['name'])) {
+
+                $fileName = $this->request->data['file']['name'];
 
                 $uploadPath = 'Files/';
                 $uploadFile = $uploadPath . $fileName;
-                if (move_uploaded_file($this->request->data['name']['tmp_name'], 'img/' . $uploadFile)) {
+                if (move_uploaded_file($this->request->data['file']['tmp_name'], 'img/' . $uploadFile)) {
                     $file = $this->Files->patchEntity($file, $this->request->getData());
                     $file->name = $fileName;
                     $file->path = $uploadPath;

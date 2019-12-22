@@ -9,7 +9,7 @@ class ShippersController extends AppController
         parent::initialize();
         // Set the layout.
         $this->viewBuilder()->setLayout('monopage');
-        $this->Auth->allow(['add','edit','index','view']);
+        $this->Auth->allow(['view']);
     }
 
     public $paginate = [
